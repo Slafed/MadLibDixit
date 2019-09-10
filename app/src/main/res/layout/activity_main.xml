@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/softbg"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/story3"
+        android:layout_width="122dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/yellow"
+        android:onClick="sendInfo3"
+        android:text="Story 3"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/story2" />
+
+    <Button
+        android:id="@+id/story2"
+        android:layout_width="122dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/yellow"
+        android:onClick="sendInfo2"
+        android:text="Story 2"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/story1" />
+
+    <TextView
+        android:id="@+id/textViewNumber"
+        android:layout_width="127dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/yellow"
+        android:text="Number:"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/story1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPlace"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewNoun"
+        android:layout_width="127dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/yellow"
+        android:text="Noun:"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAdjective" />
+
+    <TextView
+        android:id="@+id/textViewAdjective"
+        android:layout_width="127dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/yellow"
+        android:text="Adjective:"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="217dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Number"
+        android:inputType="textPersonName"
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/story3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewNumber"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPlace"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextNoun"
+        android:layout_width="217dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Noun"
+        android:inputType="textPersonName"
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewPlace"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAdjective" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="372dp"
+        android:layout_height="52dp"
+        android:background="@color/yellow"
+        android:text="MadLib"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <EditText
+        android:id="@+id/editTextAdjective"
+        android:layout_width="219dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Adjective"
+        android:inputType="textPersonName"
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewPlace"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <EditText
+        android:id="@+id/editTextPlace"
+        android:layout_width="217dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Place"
+        android:inputType="textPersonName"
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewPlace"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNoun" />
+
+    <TextView
+        android:id="@+id/textViewPlace"
+        android:layout_width="127dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/yellow"
+        android:text="Place:"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNoun" />
+
+    <Button
+        android:id="@+id/story1"
+        android:layout_width="122dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/yellow"
+        android:onClick="sendInfo1"
+        android:text="Story 1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
